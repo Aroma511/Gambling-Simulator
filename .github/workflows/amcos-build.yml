@@ -3,7 +3,7 @@ name: Build macOS .app
 on:
   push:
     branches:
-      - main
+      - main  # oder der Branch, den du benutzt
 
 jobs:
   build-macos-app:
@@ -31,5 +31,5 @@ jobs:
     - name: Upload .app artifact
       uses: actions/upload-artifact@v3
       with:
-        name: MyApp
+        name: GamblingApp
         path: dist/*.app
