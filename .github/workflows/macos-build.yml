@@ -3,7 +3,8 @@ name: Build macOS .app
 on:
   push:
     branches:
-      - main  # oder der Branch, den du benutzt
+      - main
+  workflow_dispatch:  # 👈 damit erscheint Run workflow
 
 jobs:
   build-macos-app:
