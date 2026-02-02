@@ -1,10 +1,10 @@
 from setuptools import setup
 
-APP = ['main.pyw']  # Dein Hauptskript
+APP = ['Gambling_v4.1.pyw']  # dein Hauptskript
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
-    'iconfile': 'assets/icon.icns',  # optional
+    'iconfile': None,   # hier optional dein Icon: 'assets/icon.icns'
     'packages': [],
 }
 
