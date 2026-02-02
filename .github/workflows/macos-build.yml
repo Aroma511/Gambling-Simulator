@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # 👈 damit erscheint Run workflow
+  workflow_dispatch:  # damit Run workflow erscheint
 
 jobs:
   build-macos-app:
@@ -30,7 +30,7 @@ jobs:
         python setup.py py2app
 
     - name: Upload .app artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # ✅ aktualisiert auf v4
       with:
         name: GamblingApp
         path: dist/*.app
